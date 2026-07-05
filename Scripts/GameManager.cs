@@ -203,6 +203,7 @@ public class GameManager : MonoBehaviour
                 break;
             case MapTileData.type.startBattle:
                 battleMan.StartBattle(mapData[gridPos].enemy);
+                battleMan.sceneChange = mapData[gridPos].sceneChange;
                 break;
 
             case MapTileData.type.biometal:

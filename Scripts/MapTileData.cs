@@ -26,6 +26,7 @@ public class MapTileData : MonoBehaviour
     public int messageID;
     public int storyID;
     public EnemyData enemy;
+    public string sceneChange;
     public bool repeatMessage;
     public List<int> variablesNeeded = new List<int>();
     public int giveVariable;

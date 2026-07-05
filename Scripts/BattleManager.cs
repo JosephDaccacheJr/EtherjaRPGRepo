@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using System;
+using UnityEngine.SceneManagement;
 
 public class BattleManager : MonoBehaviour
 {
@@ -15,6 +16,7 @@ public class BattleManager : MonoBehaviour
     public EnemyData currentEnemy;
     public List<Action<object>> battleActions = new List<Action<object>>();
     List<object> actionParameters = new List<object>();
+    public string sceneChange;
 
     bool _isRunningActions;
     int _currentEnemyHP;
@@ -91,7 +93,14 @@ public class BattleManager : MonoBehaviour
 
     public void BattleResult(bool playerWon)
     {
-        gameObject.SetActive(false);
+        if(sceneChange != "")
+        {
+            SceneManager.LoadScene(sceneChange);
+        }
+        else
+        {
+            gameObject.SetActive(false);
+        }
     }
 
     void TryToStartRunningActions()
@@ -349,12 +358,28 @@ public class BattleManager : MonoBehaviour
             Destroy(actionText);
         }
         _BattleActionTexts.Clear();
-        GameManager.instance.gameMode = GameManager.gammod.exploring;
-        MusicManager.instance.PlayExplore();
-        UI_GameScreen.instance.ShowGameButtons();
 
         SoundManager.PlaySound(SoundManager.instance.uiClose);
+
+        if (sceneChange != "")
+        {
+            MusicManager.instance.volumeBattle = 0f;
+            MusicManager.instance.volumeVictory = 0f;
+            UI_GameScreen.instance.SetFadeScreen(true);
+            Invoke("LoadScene", 1f);
+        }
+        else
+        {
+            GameManager.instance.gameMode = GameManager.gammod.exploring;
+            MusicManager.instance.PlayExplore();
+            UI_GameScreen.instance.ShowGameButtons();
+        }
         gameObject.SetActive(false);
+    }
+
+    void LoadScene()
+    {
+        SceneManager.LoadScene(sceneChange);
     }
     public void ClickOnAttack(bool isBurst)
     {
