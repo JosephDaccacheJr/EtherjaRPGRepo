@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b08b802b1aac7da4893bfc17ff2a531e, type: 3}
+  m_Name: 01_BipedalBeast_Green
+  m_EditorClassIdentifier: 
+  m_uniqueID: 1
+  m_name: Wild Bipedal Beta
+  m_graphic: Monster_BipedalCreature
+  m_level: 1
+  m_cannotFlee: 0
+  HP: 10
+  AC: 5
+  expReward: 150
+  attackModifier: 1
+  recklessness: 0.517
+  cautiousness: 0
+  battleMovesRegular:
+  - {fileID: 11400000, guid: 9b1eb6d777f0c214a85bbbac83fe2fa3, type: 2}
+  battleMovesCautious: []
+  battleMovesReckless:
+  - {fileID: 11400000, guid: 26098efbdce07db4aa19bd468ad562b9, type: 2}

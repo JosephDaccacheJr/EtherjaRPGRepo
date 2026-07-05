@@ -1,0 +1,4 @@
+ID,NAME,COST,DAMAGE,ACCURACYMOD,SHOTCOUNT
+1,Basic Pistol,10,4,1,1
+2,Basic Rifle,15,4,0.5,3
+3,Basic Shotgun,20,8,0.4,5

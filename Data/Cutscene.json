@@ -1,0 +1,19 @@
+	
+	[
+		{	
+			"storyText": ["“Ether jump complete, entering system JSI-993.” Your ships computer registered a successful jump as you enter the next planet on your patrol route. You are Sophitia Abendroth of the Warden Corps, tasked with patrolling designated sectors of space for anything unusual. While entering this seemingly humdrum system, you pick up a weak distress signal."]
+		},		
+		{
+			"storyText": ["It's Call Number designates it as the TSS Airvelot, a science vessel that was testing a new type of Ether Drive that suddenly vanished. You pick up that it's coming from the 5th planet in this system."]
+		},	
+		{
+			"storyText": ["Looking up the profile, you see her captain was Matthua Dubois, a respected theoretical physicist. You don't know too much about him other than what his science corps profile says, but you recall hearing it's considered one of the best in his field."]
+		},
+		{
+			"storyText": ["You relay all this to Warden Command, and they tell you to approach the planet, find out what happened to the Airvelot, and rescue any survivors. With an order confirmed reply, you head to the 5th planet."]
+		},
+		{
+			"storyText": ["Landing on the planet, you perform an atmospheric scan. While it has a breathable atmosphere, protocol dictates that any landing on an unknown world requires the use of protective gear. Readying your weapon, you step out of your ship and proceed forward to the wreckage of the Airvelot."]
+		}
+	]
+

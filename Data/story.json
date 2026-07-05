@@ -1,0 +1,66 @@
+
+	[
+		{
+			"storyText": ["Oh hi Mark.","What's new with you?","Oh I'm just sitting here thinking, y'know?"],
+			"storyImage": ["MD01","MD02","SA01"]
+		},
+		{
+			"storyText": [
+				"You approach the ship wreckage you assume to be part of the TSS Airvelot. You don’t see any obvious markings denoting this, but it is of clear terran design. You begin searching around, and come across a single entry log on the floor that has become dusty but otherwise functional. You activate it.",
+				"“This is Captain Matthua Dubois, far as I can tell, the only survivor of the Airvelot. I’m going to assume that the T-date is June 5th, 2425 but given what happened, who knows. The new Ether Drive was a catastrophic failure. We know that experimenting with new devices that warp reality is risky, but we didn’t anticipate this. When we activated it, the whole drive seemingly overloaded, the TMD shields completely failing and causing numerous reality tears around and inside the ship. We ended up way off target, at least 400 light years off target. I suppose I should thank God that we appeared near a Class-M planet that we could crash land on before every piece of the ship broke off, but on the other hand, every other member of the crew were caught in the reality tears. The only merciful thing about such a fate is that it’s a very quick death. Still, I must remain focused on survival now. Make my way to every part of the ship that landed. I’ll leave a log in each piece I find. I’ll try to make the most of this, after I am on an unexplored planet, something I joined the Science Corps to do. May as well get something out of this mess.”",
+				"You now at least have answers on what happened to the ship. You hope that Captain Dubois is still alive. You take the log with you and proceed forward."
+			],
+			"storyImage": [ "SA01", "MD01", "SA02"]
+		},
+		{
+			"storyText": [
+				"You find another piece of ship wreckage, the name TSS Airvelot is clearly visible on the burnt hull. Exploring inside, you see a makeshift bed made from the insulation material used in the hull. A soft enough material, you suppose. You find next to it another log.",
+				"“I’ve timed it and a day on this planet seems to be roughly 35 hours. That will make things confusing for my body clock but given how thick the cloud layer is, not much light gets through during the day anyway. The good news is far as I can tell, the fruits on this planet are edible, as is the meat from the wildlife, and the water is fairly safe to drink. The bad news is everything on this planet has the same bitter aftertaste. Don’t know how well that bodes for me but I don’t really have an option. Still, better than the average MRE. I’ll continue traveling north after I get some sleep, there should be more of the ship in that direction. Hopefully I can find some supplies along the way and God willing, the communication relay will be intact.”",
+				"You can't help but be concerned after learning he has begun eating the fruit on the planet, but he had no other option. From what you've seen so far, very little on the ship survived, and that probably included rations. Hopefully, there is no negative side effects to consuming the fruits and wildlife."
+			],
+			"storyImage": [ "SA01", "MD01", "SA02" ]
+		},
+		{
+			"storyText": [
+				"You enter the wreckage, finding the burnt out remains of the communication relay of the Airvelot. It’s a bit hard to tell, but you see what look like plasma bolt holes in the wall. Near them is a log.",
+				"“Fan-fucking-tastic. The communication relay is completely destroyed, and there is no way I can repair it with what I have. My best bet now is hoping some long range observatory station catches that there are some debris orbiting the planet. Not impossible, but still, not a promise. Hang on.”",
+				"You hear on the log several shots from what is clearly a plasma rifle.",
+				"“Okay, okay. Focus Matthua, survival is the main priority. I can still get some supplies from the other parts of the ship further north. Actually, maybe the Ether Drive still has some functional parts to it. If I’m lucky I can somehow use it to get the comms functional again. It’s a long shot, but it’s my best bet. I need to lay down for now, though. I’m feeling dizzy. Where is that music coming from?”",
+				"You hear no music on the log before it ends."
+			],
+			"storyImage": [ "SA01", "MD04", "SA01", "MD05", "SA01" ]
+		},
+		{
+			"storyText": [
+				"Once again you find a log in the wreckage alongside another makeshift bed made of the insulation material.",
+				"“I saw something last night. Something way off in the distance to the north. This is going to sound absolutely absurd, but I could have sworn it was an angel. That’s ridiculous right? I’m somewhat a man of faith, sure, but I am a man of science above all else. Yet, it felt so real. Actually, I’ve been experiencing strange things ever since I landed on this planet. My rational thinking tells me there could be something here affecting my senses, but I’m no stranger to hallucinations caused by strange worlds. This feels different. I can’t explain how. It just does. I’m going to venture north tomorrow. I have to know.”"
+			],
+			"storyImage": [ "SA01", "MD03" ]
+		},
+		{
+			"storyText": [
+				"Another log.",
+				"“I, I don’t know what to do. I found the angel again. She looked at me, her face very familiar but I couldn’t place where I saw it before. She had a look of unspeakable sadness on her face. Not saying a word, she showed me in my mind that most horrific thing I could ever imagine. She showed me God. She showed me the body of God. She showed me the unmoving body of God.",
+				"“God is dead.”",
+				"The log is filled with the sound of his panicked breaths before ending. Even through the audio, you can tell his grip on reality is rapidly slipping."
+			],
+			"storyImage": [ "SA01", "MD02", "MD02", "SA01" ]
+		},
+		{
+			"storyText": [
+				"You find what you presume to be the last log.",
+				"“The vision the angel has given me filled my mind with unspeakable terrors. I can’t believe it. God is dead. What does this mean? What does it mean for us, for the universe, for all reality? What does this mean for eternity? Moreover, what is so terrible, so dreadful, that it could kill God? I cannot sit by and do nothing. Something must be done. Fortunately, I have an idea. Perhaps, as his final act before meeting this unspeakable fate, God in his eternal wisdom put me and this ship on this planet. The Ether Drive. The reality bending properties are greater than any drive made before it. I think, if I find out how to utilize it, I can change reality in any way I wish. I can right what is wrong. I can bring God back. I’ll need to overload it even more than what happened when we first tested it, at least 50 times more. I believe I can achieve this if I connect it directly to the reactor. It should be further north, the last part of the ship. They are made to be the most durable section so the chances of it still working is high. There is no time to waste. I must go now. I must save God.”",
+				"You report everything you have discovered to Warden Command. They tell you that you must stop Dubois, as there is no telling what kind of damage to the fabric of space and time could be done over who knows how large an area. It could potentially span thousands of lightyears. You acknowledge and head north to confront Dubois."
+			],
+			"storyImage": [ "SA01", "MD05", "SA03" ]
+		},
+		{
+			"storyText": [
+				"You approach the last wreckage of the Airvelot, which contains the Ether Drive. You see Matthua, working at a console. He glances up at you.",
+				"“The vision the angel has given me filled my mind with unspeakable terrors. I can’t believe it. God is dead. What does this mean? What does it mean for us, for the universe, for all reality? What does this mean for eternity? Moreover, what is so terrible, so dreadful, that it could kill God? I cannot sit by and do nothing. Something must be done. Fortunately, I have an idea. Perhaps, as his final act before meeting this unspeakable fate, God in his eternal wisdom put me and this ship on this planet. The Ether Drive. The reality bending properties are greater than any drive made before it. I think, if I find out how to utilize it, I can change reality in any way I wish. I can right what is wrong. I can bring God back. I’ll need to overload it even more than what happened when we first tested it, at least 50 times more. I believe I can achieve this if I connect it directly to the reactor. It should be further north, the last part of the ship. They are made to be the most durable section so the chances of it still working is high. There is no time to waste. I must go now. I must save God.”",
+				"You report everything you have discovered to Warden Command. They tell you that you must stop Dubois, as there is no telling what kind of damage to the fabric of space and time could be done over who knows how large an area. It could potentially span thousands of lightyears. You acknowledge and head north to confront Dubois."
+			],
+			"storyImage": [ "MD06", "MD05", "SA03" ]
+		}
+	]
+

@@ -1,0 +1,71 @@
+000#DO NOT USE MESSAGE"
+*001#You approach the ship wreckage you assume to be part of the TSS Airvelot. You don't see any obvious markings denoting this, but it is of clear terran design. You begin searching around, and come across a single entry log on the floor that has become dusty but otherwise functional. You activate it.
+
+"This is Captain Matthua Dubois, far as I can tell, the only survivor of the Airvelot. I'm going to assume that the T-date is June 5th, 2425 but given what happened, who knows. The new Ether Drive was a catastrophic failure. We know that experimenting with new devices that warp reality is risky, but we didn't anticipate this. When we activated it, the whole drive seemingly overloaded, the TMD shields completely failing and causing numerous reality tears around and inside the ship. We ended up way off target, at least 400 lightyears off target. I suppose I should thank God that we appeared near a Class-M planet that we could crash land on before every piece of the ship broke off, but on the other hand, every other member of the crew were caught in the reality tears. The only merciful thing about such a fate is that it's a very quick death. Still, I must remain focused on survival now. Make my way to every part of the ship that landed. I'll leave a log in each piece I find. I'll try to make the most of this, after I am on an unexplored planet, something I joined the Science Corps to do. May as well get something out of this mess."
+
+*002#You find another piece of ship wreckage, the name TSS Airvelot is clearly visible on the burnt hull. Exploring inside, you see a makeshift bed made from the insulation material used in the hull. A soft enough material, you suppose. You find next to it another log.
+
+"I've timed it and a day on this planet seems to be roughly 35 hours. That will make things confusing for my body clock but given how thick the cloud layer is, not much light gets through during the day anyway. The good news is far as I can tell, the fruits on this planet are edible, as is the meat from the wildlife, and the water is fairly safe to drink. The bad news is everything on this planet has the same bitter aftertaste. Don't know how well that bodes for me but I don't really have an option. Still, better than the average MRE. I'll continue traveling north after I get some sleep, there should be more of the ship in that direction. Hopefully I can find some supplies along the way and God willing, the communication relay will be intact."
+
+*003#You enter the wreckage, finding the burnt out remains of the communication relay of the Airvelot. It's a bit hard to tell, but you see what look like plasma bolt holes in the wall. Near them is a log.
+
+"Fan-fucking-tastic. The communication relay is completely destroyed, and there is no way I can repair it with what I have. My best bet now is hoping some long range observatory station catches that there are some debris orbiting the planet. Not impossible, but still, not a promise. Hang on." 
+
+You hear on the log several shots from what is clearly a plasma rifle.
+
+"Okay, okay. Focus Matthua, survival is the main priority. I can still get some supplies from the other parts of the ship further north. Actually, maybe the Ether Drive still has some functional parts to it. If I'm lucky I can somehow use it to get the comms functional again. It's a long shot, but it's my best bet. I need to lay down for now, though. I'm feeling dizzy. Is, that music?"
+
+You hear no music on the log before it ends.
+
+*004#Once again you find a log in the wreckage alongside another makeshift bed made of the insulation material.
+
+"I saw something last night. Something way off in the distance to the north. This is going to sound absolutely absurd, but I could have sworn it was an angel. That's ridiculous right? I'm somewhat a man of faith, sure, but I am a man of science above all else. Yet, it felt so real. Actually, I've been experience strange things ever since I landed on this planet. My rational thinking tells me there could be something here affecting my senses, but I'm no stranger to hallucinations caused by strange worlds. This feels different. I can't explain how. It just does. I'm going to venture north tomorrow. I have to know."
+
+*005#Another log.
+
+"I, I don't know what to do. I found the angel again. She looked at me, her face very familiar but I couldn't place where I saw it before. She had a look of unspeakable sadness on her face. Not saying a word, she showed me in my mind that most horrific thing I could ever imagine. She showed me God. She showed me the body of God. She showed me the unmoving body of God.
+
+God is dead."
+
+*006#You find what you presume to be the last log.
+
+"The vision the angel has given me filled my mind with unspeakable terrors. I can't believe it. God is dead. What does this mean? What does it mean for us, for the universe, for all reality? What does this mean for eternity? Moreover, what is so terrible, so dreadful, that it could kill God? I cannot sit by and do nothing. Something must be done. Fortunately, I have an idea. Perhaps, as his final act before meeting this unspeakable fate, God in his eternal wisdom put me and this ship on this planet. The Ether Drive. The reality bending properties are greater than any drive made before it. I think, if I find out how to utilize it, I can change reality in any way I wish. I can right what is wrong. I can bring God back. I'll need to overload it even more than what happened when we first tested it, at least 50 times more. I believe I can achieve this if I connect it directly to the reactor. It should be further north, the last part of the ship. They are made to be the most durable section so the chances of it still working is high. There is no time to waste. I must go now. I must save God."
+
+You report everything you have discovered to Warden Command. They tell you that you must stop Dubois, as there is no telling what kind of damage to the fabric of space and time could be done over who knows how large an area. It could potentially span thousands of lightyears. You acknowledge and head north to confront Dubois.
+
+*007#You approach the final section of the ship, containing the reactor, the Ether Drive, and Dubois.
+
+He is at a console, making calculations and adjustments of some sort. He turns and sees you, a small smile forming on his face.
+
+"I lost hope of being found. Guess the SOS sent out while the Airvelot went down got through."
+
+You tell him you read his logs, and know what he is doing.
+
+"Yes, I imagine you are skeptical about what I saw. Honestly I don't blame you, I would find it hard to believe myself had I not personally witnessed it."
+
+You explain to him that he is suffering hallucinations, caused by some chemical in the food and water found on this planet. He shakes his head.
+
+"You think I'm not aware of that? That that is how my vision was possible? You read my logs, you know that this felt different. It felt real. Very real. You cannot possible begin to imagine the horror I felt in my very soul when I saw the body of God."
+
+You try appeal to him as a man of science, to think things through rationally, and that his experiments with the Ether Drive could cause untold damage to space time across a potentially vast distance. He shakes his head again, growing agitated.
+
+"Yes, I know, that is why before I even consider trying a configuration, I run it through 1000 simulations. I'm not careless, Warden. Surely, I will find one that will work. Surely. I, I have faith."
+
+You can tell his mental state is degrading, and know that he will eventually just try one he thinks might work, regardless what the simulations say. You try one more time, this time appealing to his faith, that surely God is eternal and cannot die. He glares at you, is about to say something, but then stops, looking around.
+
+"The music..."
+
+You hear no music.
+
+"Yes, yes I hear, she is a threat. She wants God to stay dead. Don't worry, I won't let her stop me!" 
+
+He reaches for his plasma rifle and takes several shots, but you are able to move behind cover, readying your weapon. You realize you have no choice but to kill Dubois.
+
+"I will bring God back! I will save creation! I will save our creator!"
+
+*008#
+Perception: Controls accuracy of your shots
+
+Agility: Determines how well you can dodge attacks VIA AC
+
+Endurance: Controls your total HP
