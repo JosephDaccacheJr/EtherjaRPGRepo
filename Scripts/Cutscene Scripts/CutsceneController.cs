@@ -17,6 +17,13 @@ public class CutsceneController : MonoBehaviour
     public int cutsceneIndex;
     public Image fadeOut;
     public string nextScene;
+    public AudioSource cutsceneMusic;
+    public AudioSource sfxClick;
+
+    private void Awake()
+    {
+        fadeOut.color = new Color(0f, 0f, 0f, 1f);
+    }
     void Start()
     {
         Debug.Log(cutsceneData.text);
@@ -48,16 +55,17 @@ public class CutsceneController : MonoBehaviour
     {
         if (cutsceneIndex < cutsceneObjects.Count)
             CutsceneDisplayControl();
-        else
-        {
-            RunFadeOut();
-        }
+
+        RunFadeOut();
+
 
     }
 
     void RunFadeOut()
     {
-        fadeOut.color = new Color(0f, 0f, 0f, Mathf.MoveTowards(fadeOut.color.a, 1f, Time.deltaTime));
+        float fadeTarget = cutsceneIndex < cutsceneObjects.Count ? 0f : 1f;
+        fadeOut.color = new Color(0f, 0f, 0f, Mathf.MoveTowards(fadeOut.color.a, fadeTarget, Time.deltaTime));
+        cutsceneMusic.volume = 0.5f - (fadeOut.color.a / 2f);
     }
 
     void CutsceneDisplayControl()
@@ -80,13 +88,15 @@ public class CutsceneController : MonoBehaviour
 
     public void ProgressCutscene()
     {
-        if(cutsceneIndex >= cutsceneObjects.Count && cutsceneIndex < 99)
+        if(cutsceneIndex == cutsceneObjects.Count - 1 && cutsceneIndex < 99)
         {
-            Invoke("LoadNextScene", 2f);
+            sfxClick.Play();
+            Invoke("LoadNextScene", 1f);
             cutsceneIndex = 100;
         }
         else if(cutsceneIndex < cutsceneObjects.Count)
         {
+            sfxClick.Play();
             cutsceneIndex++;
         }
 

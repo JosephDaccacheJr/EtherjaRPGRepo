@@ -6,6 +6,8 @@ public class MainMenuController : MonoBehaviour
     public Image fade;
     bool fadeOut;
     public GameObject buttonNew, buttonContinue, buttonQuit;
+    public AudioSource menuMusic;
+    public AudioSource sfxClick;
 
     private void Awake()
     {
@@ -20,11 +22,13 @@ public class MainMenuController : MonoBehaviour
     void Update()
     {
         float fadeTarget = fadeOut ? 1f : 0f;
-        fade.color = new Color(0f, 0f, 0f, Mathf.MoveTowards(fade.color.a, fadeTarget, Time.deltaTime * 2f));
+        fade.color = new Color(0f, 0f, 0f, Mathf.MoveTowards(fade.color.a, fadeTarget, Time.deltaTime * 1f));
+        menuMusic.volume = 0.5f - (fade.color.a / 2f);
     }
 
     public void ClickContinue()
     {
+        sfxClick.Play();
         DisableButtons();
         fadeOut = true;
 
@@ -34,6 +38,7 @@ public class MainMenuController : MonoBehaviour
 
     public void ClickNew()
     {
+        sfxClick.Play();
         DisableButtons();
         fadeOut = true;
 
@@ -42,6 +47,7 @@ public class MainMenuController : MonoBehaviour
 
     public void ClickQuit()
     {
+        sfxClick.Play();
         DisableButtons();
         fadeOut = true;
 
