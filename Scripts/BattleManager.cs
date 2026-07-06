@@ -5,6 +5,7 @@ using UnityEngine.UI;
 using TMPro;
 using System;
 using UnityEngine.SceneManagement;
+using UnityEditor.Timeline.Actions;
 
 public class BattleManager : MonoBehaviour
 {
@@ -40,7 +41,7 @@ public class BattleManager : MonoBehaviour
     public TMP_Text textPlayerHP;
     public TMP_Text textBattleResult;
     public TMP_Text textMedkitCount;
-    public Button buttonAttack, buttonAttackBurst, buttonUseMedkit, buttonFlee;
+    public Button buttonAttack, buttonAttackBurst, buttonUseMedkit, buttonFlee, buttonHelp;
     List<GameObject> _BattleActionTexts = new List<GameObject>(); // To ensure no messages linger
 
     [Header("Prefabs")]
@@ -341,6 +342,7 @@ public class BattleManager : MonoBehaviour
         buttonAttackBurst.interactable = set;
         buttonUseMedkit.interactable = set;
         buttonFlee.interactable = currentEnemy.m_cannotFlee ? false : set;
+        buttonHelp.interactable = set;
     }
 
     public void UpdateInfo()
@@ -425,8 +427,23 @@ public class BattleManager : MonoBehaviour
         TryToStartRunningActions();
 
     }
+
+    public void ClickHelp()
+    {
+        SoundManager.PlaySound(SoundManager.instance.uiOpen);
+        transform.localScale = Vector3.zero;
+        Action<string> clickAction;
+        clickAction = delegate (string s) { ReOpenBattle(); };
+        GameManager.instance.uiTextBox.ShowMessage(9, clickAction); 
+    }
     #endregion
 
+    public void ReOpenBattle()
+    {
+        SoundManager.PlaySound(SoundManager.instance.uiClick);
+        SoundManager.PlaySound(SoundManager.instance.uiOpen);
+        transform.localScale = Vector3.one;
+    }
     public void ShowActionText(string text)
     {
         GameObject newAction = Instantiate(actionText, enemyScreen.transform);

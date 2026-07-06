@@ -16,7 +16,7 @@ MonoBehaviour:
   m_name: Basic Attack
   m_moveType: 2
   healMessage: 0
-  hpChangePlayer: 35
+  hpChangePlayer: 30
   hpChangeSelf: 0
   accuracy: 0.903
   accuracyBoost: 5

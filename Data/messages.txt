@@ -69,3 +69,6 @@ Perception: Controls accuracy of your shots
 Agility: Determines how well you can dodge attacks VIA AC
 
 Endurance: Controls your total HP
+
+*009#
+Burst attacks are less accurate shots that can do triple damage.
