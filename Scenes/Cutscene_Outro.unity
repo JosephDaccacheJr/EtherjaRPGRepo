@@ -2571,7 +2571,7 @@ MonoBehaviour:
   - {fileID: 1014125289}
   cutsceneIndex: 0
   fadeOut: {fileID: 1249233867}
-  nextScene: Game
+  nextScene: Menu
   cutsceneMusic: {fileID: 371534530}
   sfxClick: {fileID: 1374741161}
 --- !u!4 &1975092384

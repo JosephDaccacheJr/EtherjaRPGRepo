@@ -57,6 +57,7 @@ public class BattleManager : MonoBehaviour
 
     public void StartBattle(EnemyData newEnemy)
     {
+        sceneChange = "";
         _endOfBattleMessages.Clear();
         UI_GameScreen.instance.HideGameButtons();
         GameManager.instance.gameMode = GameManager.gammod.battle;
@@ -361,7 +362,7 @@ public class BattleManager : MonoBehaviour
 
         SoundManager.PlaySound(SoundManager.instance.uiClose);
 
-        if (sceneChange != "")
+        if (sceneChange != "" && PlayerStats.instance.HP > 0)
         {
             MusicManager.instance.volumeBattle = 0f;
             MusicManager.instance.volumeVictory = 0f;
