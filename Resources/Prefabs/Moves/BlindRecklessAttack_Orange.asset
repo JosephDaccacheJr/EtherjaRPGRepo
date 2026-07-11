@@ -19,3 +19,5 @@ MonoBehaviour:
   hpChangePlayer: 10
   hpChangeSelf: 2
   accuracy: 0.395
+  accuracyBoost: 0
+  attackSound: {fileID: 8300000, guid: 48590ef07998ee64ab679e1c43a6e319, type: 3}

@@ -20,3 +20,5 @@ MonoBehaviour:
   hpChangeSelf: 0
   accuracy: 1
   accuracyBoost: 20
+  attackSound: {fileID: 8300000, guid: 3b5825611d46bd447b6ccea32a11bc02, type: 3}
+  playSoundEvenIfMiss: 1

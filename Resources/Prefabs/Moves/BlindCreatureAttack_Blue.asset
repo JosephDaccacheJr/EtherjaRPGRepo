@@ -20,3 +20,4 @@ MonoBehaviour:
   hpChangeSelf: 0
   accuracy: 0.872
   accuracyBoost: 5
+  attackSound: {fileID: 8300000, guid: 48590ef07998ee64ab679e1c43a6e319, type: 3}

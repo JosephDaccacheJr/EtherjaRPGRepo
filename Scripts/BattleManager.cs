@@ -5,7 +5,6 @@ using UnityEngine.UI;
 using TMPro;
 using System;
 using UnityEngine.SceneManagement;
-using UnityEditor.Timeline.Actions;
 
 public class BattleManager : MonoBehaviour
 {
@@ -53,7 +52,9 @@ public class BattleManager : MonoBehaviour
 
     private void Update()
     {
+#if UNITY_EDITOR
         DebugCalls();
+#endif
     }
 
     public void StartBattle(EnemyData newEnemy)
@@ -172,6 +173,7 @@ public class BattleManager : MonoBehaviour
         GameManager.instance.UseMedikit();
 
         ShowActionText("HEALING");
+        SoundManager.PlaySound(SoundManager.instance.heal);
         UpdateInfo();
         AddAction(StartEnemyTurn, "");
     }
@@ -241,11 +243,13 @@ public class BattleManager : MonoBehaviour
         }
 
 
+        Debug.Log("<color=yellow>BATTLE: Attacking with move " + chosenMove.name);
         switch (chosenMove.healMessage)
         {
             case true:
                 Debug.Log("<color=yellow>BATTLE: Enemy Healing </color>");
                 ShowActionText("HEALING!");
+                SoundManager.PlaySound(SoundManager.instance.heal);
                 _currentEnemyHP = Mathf.Clamp(_currentEnemyHP + chosenMove.hpChangeSelf, 0, currentEnemy.HP);
                 break;
             case false:
@@ -256,6 +260,7 @@ public class BattleManager : MonoBehaviour
                 enemyAnim.Play("Enemy_Attack");
                 if (hitDice >= PlayerStats.instance.GetAC())
                 {
+                    SoundManager.PlaySound(SoundManager.instance.attackSound, chosenMove.attackSound);
                     int damageToPlayer = (chosenMove.hpChangePlayer * currentEnemy.attackModifier) - (PlayerStats.instance.endurance / 2);
                     damageToPlayer = Mathf.Clamp(damageToPlayer, 0, int.MaxValue);
                     PlayerStats.instance.HP -= damageToPlayer;
@@ -264,6 +269,14 @@ public class BattleManager : MonoBehaviour
                 }
                 else
                 {
+                    if(chosenMove.playSoundEvenIfMiss) 
+                    {
+                        SoundManager.PlaySound(SoundManager.instance.attackSound, chosenMove.attackSound);
+                    }
+                    else
+                    {
+                        SoundManager.PlaySound(SoundManager.instance.missSound);
+                    }
                     ShowActionText("ENEMY MISSES!");
                     Debug.Log("<color=yellow>BATTLE: Player Missed</color>");
                 }
@@ -280,11 +293,14 @@ public class BattleManager : MonoBehaviour
     {
         if (_currentEnemyHP <= 0)
         {
+            SoundManager.PlaySound(SoundManager.instance.defeatEnemy);
             _resultMsgIndex = 0;
             textEnemyHP.text = "";
             Debug.Log("<color=yellow>BATTLE: ENEMY KILLED</color>");
             _endOfBattleMessages.Add("VICTORY!\n");
-            _endOfBattleMessages.Add("+" + currentEnemy.expReward + " EXP\n");
+            if(currentEnemy.expReward > 0)
+                _endOfBattleMessages.Add("+" + currentEnemy.expReward + " EXP\n");
+            
             PlayerStats.instance.exp += currentEnemy.expReward;
             MusicManager.instance.PlayVictory();
             setAttackButtons.SetActive(false);

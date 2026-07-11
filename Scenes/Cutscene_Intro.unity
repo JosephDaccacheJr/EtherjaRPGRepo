@@ -2335,6 +2335,7 @@ MonoBehaviour:
   - {fileID: 1813362517}
   - {fileID: 1471925790}
   - {fileID: 699971222}
+  cutsceneDataStart: 0
   cutsceneIndex: 0
   fadeOut: {fileID: 1128918012}
   nextScene: Game

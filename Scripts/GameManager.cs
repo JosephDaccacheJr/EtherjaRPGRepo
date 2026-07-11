@@ -214,7 +214,8 @@ public class GameManager : MonoBehaviour
                 mapData[gridPos].UpdateMapGraphic();
                 break;
             default:
-                RollRandomEncounter();
+                if (!mapData[gridPos].noRandomEncounter)
+                    RollRandomEncounter();
                 break;
         }
     }
@@ -292,6 +293,7 @@ public class GameManager : MonoBehaviour
         
         if (playerStats.medkits <= 0 || playerStats.HP == playerStats.GetMaxHP()) return;
         playerStats.medkits--;
+        SoundManager.PlaySound(SoundManager.instance.heal);
         float maxHP = playerStats.GetMaxHP();
         // TODO make the healing calculation set at a singlular place that can be referenced
         // anywhere

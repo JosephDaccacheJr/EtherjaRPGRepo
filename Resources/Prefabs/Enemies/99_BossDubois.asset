@@ -29,3 +29,4 @@ MonoBehaviour:
   - {fileID: 11400000, guid: c8ce6e114454a0346b62939be5c263a7, type: 2}
   battleMovesReckless:
   - {fileID: 11400000, guid: 8c17316ab5e393d4387a2b30e02a44c6, type: 2}
+  onDefeatLoadScene: 

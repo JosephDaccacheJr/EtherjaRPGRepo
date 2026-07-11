@@ -14,6 +14,7 @@ public class CutsceneController : MonoBehaviour
     public List<Image> cutsceneImages;
     public List<TMP_Text> cutsceneTexts;
     public List<GameObject> cutsceneObjects;
+    public int cutsceneDataStart;
     public int cutsceneIndex;
     public Image fadeOut;
     public string nextScene;
@@ -31,7 +32,7 @@ public class CutsceneController : MonoBehaviour
         int cutsceneDataIndex = 0;
         foreach(var cutscene in cutsceneObjects) 
         {
-            cutscene.GetComponentInChildren<TMP_Text>().text = cutscenes[cutsceneDataIndex].storyText[0];
+            cutscene.GetComponentInChildren<TMP_Text>().text = cutscenes[cutsceneDataStart + cutsceneDataIndex].storyText[0];
             cutsceneDataIndex++;
         }
 

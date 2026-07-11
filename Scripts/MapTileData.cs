@@ -22,7 +22,8 @@ public class MapTileData : MonoBehaviour
     public bool walkable;
 
 
-    
+
+    public bool noRandomEncounter;
     public int messageID;
     public int storyID;
     public EnemyData enemy;

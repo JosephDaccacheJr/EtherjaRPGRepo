@@ -80,4 +80,13 @@ public class UI_InventoryScreen : MonoBehaviour
         SoundManager.PlaySound(SoundManager.instance.uiClose);
         UI_GameScreen.instance.ShowGameButtons();
     }
+
+    public void ClickedOnHelp()
+    {
+        SoundManager.PlaySound(SoundManager.instance.uiOpen);
+        Action<string> clickAction;
+        clickAction = delegate (string s) { UI_GameScreen.instance.ShowInventorySreen(); };
+        GameManager.instance.uiTextBox.ShowMessage(10, clickAction);
+        gameObject.SetActive(false);
+    }
 }

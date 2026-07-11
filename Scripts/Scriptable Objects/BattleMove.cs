@@ -27,4 +27,6 @@ public class BattleMove : ScriptableObject
     [Range(0,1)]
     public float accuracy;
     public int accuracyBoost;
+    public AudioClip attackSound;
+    public bool playSoundEvenIfMiss;
 }

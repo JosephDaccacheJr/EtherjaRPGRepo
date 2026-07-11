@@ -1,3 +1,4 @@
+using System.IO;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -16,7 +17,9 @@ public class MainMenuController : MonoBehaviour
 
     void Start()
     {
-        
+
+        string savePath = Application.persistentDataPath + "/save.JSON";
+        buttonContinue.GetComponent<Button>().interactable = File.Exists(savePath);
     }
 
     void Update()
@@ -29,6 +32,12 @@ public class MainMenuController : MonoBehaviour
     public void ClickContinue()
     {
         sfxClick.Play();
+
+
+        if (!File.Exists(Application.persistentDataPath + "/save.JSON"))
+            return;
+
+
         DisableButtons();
         fadeOut = true;
 

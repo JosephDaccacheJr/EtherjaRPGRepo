@@ -14,8 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_uniqueID: 
   m_name: Heal
-  m_moveType: 0
-  healMessage: 0
+  m_moveType: 1
+  healMessage: 1
   hpChangePlayer: 0
-  hpChangeSelf: 0
+  hpChangeSelf: 5
   accuracy: 1
+  accuracyBoost: 0
+  attackSound: {fileID: 0}
+  playSoundEvenIfMiss: 0

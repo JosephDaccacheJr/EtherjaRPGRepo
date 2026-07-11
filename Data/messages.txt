@@ -72,3 +72,12 @@ Endurance: Controls your total HP
 
 *009#
 Burst attacks are less accurate shots that can do triple damage.
+
+Medkits heal for 60% of your total HP.
+
+*010#
+Increasing gun level raises the max potential damage.
+
+Medkits can be used in the inventory screen and heal for 60% of your total HP.
+
+Biometal can be found throughout the map.
