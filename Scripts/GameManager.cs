@@ -32,6 +32,7 @@ public class GameManager : MonoBehaviour
     public UI_TextBox uiTextBox;
     public UI_StoryScreen uiStoryScreen;
     public bool blockMovement;
+    public GameObject textCheatsEnabled;
 
     [Header("Map Tiles")]
     public GameObject gridBasicGreen;
@@ -45,6 +46,8 @@ public class GameManager : MonoBehaviour
 
     [Header("CHEATS")]
     public bool disableEncounters;
+    public bool superPowered;
+    public bool instantHeal;
 
     // Player Variables
     public bool IsPlayerAtDestination
@@ -111,6 +114,7 @@ public class GameManager : MonoBehaviour
         }
         
         MusicManager.instance.PlayExplore();
+        textCheatsEnabled.SetActive(disableEncounters || superPowered || instantHeal);
     }
     
     void Update()
@@ -139,14 +143,15 @@ public class GameManager : MonoBehaviour
             case gammod.message:
                 break;
         }
+        Cheats();
 
-        if(Input.GetKeyDown(KeyCode.P)) 
+    }
+
+    void Cheats()
+    {
+        if (instantHeal  && Input.GetKeyDown(KeyCode.H))
         {
-            SaveGame();
-        }
-        if (Input.GetKeyDown(KeyCode.L))
-        {
-            LoadGame();
+            playerStats.HP = playerStats.GetMaxHP();
         }
     }
 

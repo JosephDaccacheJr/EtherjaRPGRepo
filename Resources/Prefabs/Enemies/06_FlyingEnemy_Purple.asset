@@ -22,10 +22,11 @@ MonoBehaviour:
   expReward: 300
   attackModifier: 1
   recklessness: 0
-  cautiousness: 0.534
+  cautiousness: 0.466
   battleMovesRegular:
   - {fileID: 11400000, guid: cac2807227dba934ba601cf1b4d9a124, type: 2}
   battleMovesCautious:
   - {fileID: 11400000, guid: c8ce6e114454a0346b62939be5c263a7, type: 2}
   battleMovesReckless:
   - {fileID: 0}
+  onDefeatLoadScene: 

@@ -66,6 +66,8 @@ public class BattleManager : MonoBehaviour
         MusicManager.instance.PlayBattle();
         Debug.Log("<color=yellow>BATTLE: Start Battle</color>");
         battleActions.Clear();
+        actionParameters.Clear();
+        
         _isRunningActions = false;
 
         setAttackButtons.SetActive(true);
@@ -78,7 +80,7 @@ public class BattleManager : MonoBehaviour
         enemyAnim.Play("Enemy_Idle");
         _currentEnemyHP = currentEnemy.HP;
         UpdateInfo();
-        SetBattleControls(false);
+        SetBattleControls(true);
         gameObject.SetActive(true);
         AddAction(StartPlayerTurn, "");
         TryToStartRunningActions();
@@ -112,7 +114,7 @@ public class BattleManager : MonoBehaviour
         {
             _isRunningActions = true;
             // 0.5f Min
-            StartCoroutine(StartActions(1f));
+            StartCoroutine(StartActions(0.75f));
         }
     }
 
@@ -125,17 +127,23 @@ public class BattleManager : MonoBehaviour
         actionParameters.RemoveAt(0);
         while (waitTimer > 0)
         {
+            Debug.Log("<color=yellow>BATTLE:Wait Timer: " + waitTimer + "</color>");
             waitTimer -= Time.deltaTime;
             yield return null;
         }
         if (battleActions.Count > 0)
         {
+            Debug.Log("<color=yellow>BATTLE: Starting Coroutine Again</color>");
             StartCoroutine(StartActions(waitTime));
         }
         else
         {
+            Debug.Log("<color=yellow>BATTLE: Runing Actions is set to false</color>");
+
             _isRunningActions = false;
         }
+
+        yield return null;
     }
 
     public void PlayerAttack(object variables)
@@ -150,10 +158,13 @@ public class BattleManager : MonoBehaviour
             SoundManager.PlaySound(SoundManager.instance.playerAttackSingle);
 
 
+        if (GameManager.instance.superPowered) hitDice = 999;
+
         if (hitDice > currentEnemy.AC)
         {
 
             int dmg = ((int)UnityEngine.Random.Range(0, 4) + 1) * (int)_playerDMGMod;
+            if (GameManager.instance.superPowered) dmg = 999;
             _currentEnemyHP -= dmg;
             UpdateInfo();
             enemyAnim.Play("Enemy_Hit");
@@ -228,20 +239,23 @@ public class BattleManager : MonoBehaviour
         if (moveDice <= currentEnemy.recklessness && currentEnemy.battleMovesReckless.Count != 0)
         {
             // Chose Reckless move
+            Debug.Log("<color=yellow>BATTLE: Choosing Reckless Move</color>");
+
             chosenMove = currentEnemy.battleMovesReckless[(int)UnityEngine.Random.Range(0, currentEnemy.battleMovesRegular.Count)];
         }
         else if (moveDice > currentEnemy.recklessness && moveDice <= currentEnemy.cautiousness + currentEnemy.recklessness
             && currentEnemy.battleMovesCautious.Count != 0)
         {
             // Chose Cautious move
+            Debug.Log("<color=yellow>BATTLE: Choosing Cautious Move</color>");
             chosenMove = currentEnemy.battleMovesCautious[(int)UnityEngine.Random.Range(0, currentEnemy.battleMovesRegular.Count)];
         }
         else
         {
             // Chose Regular move
+            Debug.Log("<color=yellow>BATTLE: Choosing Regular Move</color>");
             chosenMove = currentEnemy.battleMovesRegular[(int)UnityEngine.Random.Range(0, currentEnemy.battleMovesRegular.Count)];
         }
-
 
         Debug.Log("<color=yellow>BATTLE: Attacking with move " + chosenMove.name);
         switch (chosenMove.healMessage)
